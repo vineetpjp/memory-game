@@ -3,9 +3,9 @@ import axios from "axios";
 
 const setAuthToken = (token) => {
   if (token) {
-    axios.defaults.headers.common["jwtToken"] = token;
+    axios.defaults.headers.common["file_id"] = token;
   } else {
-    delete axios.defaults.headers.common["jwtToken"];
+    delete axios.defaults.headers.common["file_id"];
   }
 };
 
